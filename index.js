@@ -12,6 +12,7 @@ Array.prototype.syncForEach = function (callback, ending_function) {
                 }
             }
             else {
+                resolve(ending_function ? ending_function : true);
                 if (ending_function)
                     ending_function();
             }

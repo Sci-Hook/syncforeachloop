@@ -16,6 +16,7 @@ Array.prototype.syncForEach = function<T>(this: T[], callback: any,ending_functi
                     callback(this[index], next,index+1,this.length);
                 }
             }else{
+                resolve(ending_function ? ending_function : true);
                 if (ending_function) ending_function();
             }
         }
