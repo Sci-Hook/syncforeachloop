@@ -35,21 +35,3 @@ Array.prototype.syncForEach = function<T>(this: T[], callback: any,ending_functi
         next();
     });
 }
-
-
-let test = ['a','b','c','d'];
-
-async function main() {
-    await test.syncForEach(function (item,next,i,l,finish) {
-        console.log(item);
-        if (i == 2) {
-            finish();  
-        }
-        next();
-    },() => {
-        console.log('ben');
-    });
-}
-
-
-main();

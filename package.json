@@ -1,6 +1,6 @@
 {
     "name": "syncforeachloop",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Synchronous version of the foreach loop.",
     "main": "index.js",
     "scripts": {
